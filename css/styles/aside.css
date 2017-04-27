@@ -1,0 +1,4 @@
+aside {
+	flex-basis: calc(100% - var(--main-width));
+	border-left: 0.07rem solid #333;
+}

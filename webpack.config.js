@@ -2,10 +2,10 @@ const webpack = require('webpack');
 const path = require('path');
 
 module.exports = {
-    entry: './scripts/index.js',
+    entry: './js/index.js',
     output: {
         path: __dirname,
-        filename: 'scripts/index.min.js'
+        filename: 'js/index.min.js'
     },
     module: {
         loaders: [

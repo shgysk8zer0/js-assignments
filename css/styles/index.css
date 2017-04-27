@@ -7,3 +7,19 @@
 @import url("../core-css/animations.css");
 @import url("../core-css/details.css");
 @import url("../core-css/dialog.css");
+@import url("header.css");
+@import url("main.css");
+@import url("aside.css");
+@import url("footer.css");
+@import url("mobile.css");
+:root {
+	font-size: 2vmin;
+}
+body {
+	margin: 0;
+	min-height: 100vh;
+	box-sizing: border-box;
+}
+*, *::before, *::after {
+	box-sizing: inherit;;
+}

@@ -1,0 +1,4 @@
+body > footer {
+	flex: 100%;
+	align-self: flex-end;
+}

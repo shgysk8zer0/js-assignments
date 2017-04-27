@@ -1,0 +1,19 @@
+body > header {
+	flex: 100%;
+	align-self: flex-start;
+	height: 20vh;
+	background-image: url("https://i.imgur.com/B0dhv5Y.png");
+	background-size: cover;
+	transition: background-position-y 5000ms;
+	color: white;
+}
+body > header:hover {
+	background-position-y: bottom;
+}
+header a {
+	color: inherit;
+}
+.currentColor, .currentColor * {
+	color: inherit;
+	fill: currentColor;
+}

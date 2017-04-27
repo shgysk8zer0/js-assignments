@@ -3,6 +3,7 @@
 	<head>
 		<title>JavaScript Assignments</title>
 		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
 		<base href="/" />
 		<script type="module" src="js/index.js" async></script>
 		<link rel="stylesheet" href="css/styles/index.css" type="text/css" />
@@ -11,16 +12,16 @@
 		<link rel="import" href="components/sidebar.html" async name="sidebar" />
 		<link rel="import" href="components/templates/lesson-list.html" async name="lesson-list" />
 	</head>
-	<body>
+	<body class="flex row wrap">
 		<div hidden>
 			<!-- Container for templates -->
 			<div data-import="lesson-list"></div>
 		</div>
-		<header data-import="header"></header>
+		<header class="flex row" data-import="header"></header>
 		<main>
 			<ol></ol>
 		</main>
 		<aside data-import="sidebar"></aside>
-		<footer data-import="footer"></footer>
+		<footer data-import="footer" class="flex-row"></footer>
 	</body>
 </html>
