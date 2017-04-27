@@ -1,0 +1,12 @@
+[submodule "css/core-css"]
+	path = css/core-css
+	url = git://github.com/shgysk8zer0/core-css.git
+[submodule "fonts"]
+	path = fonts
+	url = git://github.com/shgysk8zer0/fonts.git
+[submodule "imgs/octicons"]
+	path = imgs/octicons
+	url = git://github.com/primer/octicons.git
+[submodule "js/std-js"]
+	path = js/std-js
+	url = git://github.com/shgysk8zer0/std-js.git
