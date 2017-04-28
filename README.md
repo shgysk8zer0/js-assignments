@@ -3,7 +3,13 @@ Teaching JavaScript and Git through a repo
 - - -
 ![screenshot](https://i.imgur.com/KiwjtDV.png)
 
+- [Introduction](#introduction)
+- [Requirements](#requirements)
+- [Installation](#installtion)
+
 :godmode:
+
+## Introduction
 > This will teach you what real coding is like. Unlike other resources, this will
 > teach you how to edit code inside of an editor instead of in a browser. You will
 > learn modern practices, such as ECMAScript classes and modules, and how to use
@@ -21,3 +27,12 @@ and [Stack Overflow](https://stackoverflow.com/). This is not where you come to
 - Code editor such as [Atom](https://atom.io)
 - [NPM / NodeJS](https://nodejs.org/)
 - :coffee: Coffee
+
+## Installation
+- Install the [Git client](https://git-scm.com/download) of your choice
+- If you have not done so, create a [GitHub account](https://github.com/join)
+- Go to the main [GitHub repo](https://github.com/shgysk8zer0/js-assignments)
+- Click on the "Fork" button
+- In your Git client, clone your fork (there should be a green clone button)
+- In the command line, `cd` into the project's directory
+- Run `npm install`
