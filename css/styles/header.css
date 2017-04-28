@@ -2,7 +2,7 @@ body > header {
 	flex: 100%;
 	align-self: flex-start;
 	height: 20vh;
-	background-image: url("https://i.imgur.com/KiwjtDV.png");
+	background-image: url("/imgs/rasters/screenshot.png");
 	background-size: cover;
 	transition: background-position-y 5000ms;
 	color: white;

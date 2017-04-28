@@ -1,7 +1,7 @@
 # js-assignments
 Teaching JavaScript and Git through a repo
 - - -
-![screenshot](https://i.imgur.com/KiwjtDV.png)
+![screenshot](./imgs/rasters/screenshot.png)
 
 - [Introduction](#introduction)
 - [Requirements](#requirements)
