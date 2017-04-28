@@ -1,9 +1,10 @@
 import {$} from './std-js/functions.js';
+import * as mutations from './mutations.js';
+import * as handlers from './dataHandlers.js';
 import './polyfills.js';
 
-$(window).load(() => {
-	$('[data-import]').each(importHTML);
-
+$(window).ready(() => init()).load(() => {
+	$(document.body).watch(mutations.events, mutations.options, mutations.filter);
 	if (location.pathname === '/') {
 		listAssignments(
 			new URL('lessons.json', document.baseURI),
@@ -13,31 +14,12 @@ $(window).load(() => {
 	}
 });
 
-function importHTML(node) {
-	let link = document.querySelector(`link[rel="import"][name="${node.dataset.import}"]`);
-
-	if (sessionStorage.hasOwnProperty(`import-${link.getAttribute('name')}`)) {
-		appendImport(sessionStorage.getItem(`import-${link.getAttribute('name')}`), node);
-	} else {
-		fetch(link.href, {cache: 'default'}).then(resp => {
-			if (resp.ok) {
-				return resp.text();
-			} else {
-				throw new Error(`${resp.url} [${resp.status}: ${resp.statusText}]`);
-			}
-		}).then(html => {
-			sessionStorage.setItem(`import-${link.getAttribute('name')}`, html);
-			appendImport(html, node);
-		}).catch(console.error);
-	}
-}
-
-function appendImport(html, node) {
-	const parser = new DOMParser();
-	const doc = parser.parseFromString(html, 'text/html');
-	doc.body.childNodes.forEach(child => {
-		node.appendChild(node.ownerDocument.importNode(child, true));
-	});
+export function init(rootNode = document.body) {
+	$('[data-import]', rootNode).each(handlers.importHTML);
+	$('[data-show-modal]', rootNode).click(handlers.showModal);
+	$('[data-show]', rootNode).click(handlers.show);
+	$('[data-close]', rootNode).click(handlers.close);
+	$('[data-remove]', rootNode).click(handlers.remove);
 }
 
 function listAssignments(url, template, list) {
