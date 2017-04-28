@@ -2,6 +2,7 @@
 Teaching JavaScript and Git through a repo
 - - -
 ![screenshot](https://i.imgur.com/KiwjtDV.png)
+
 :godmode:
 > This will teach you what real coding is like. Unlike other resources, this will
 > teach you how to edit code inside of an editor instead of in a browser. You will
