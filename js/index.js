@@ -3,7 +3,7 @@ import * as mutations from './mutations.js';
 import * as handlers from './dataHandlers.js';
 import './polyfills.js';
 
-$(window).ready(() => init()).load(() => {
+$(window).ready(init).load(() => {
 	$(document.body).watch(mutations.events, mutations.options, mutations.filter);
 	if (location.pathname === '/') {
 		listAssignments(
